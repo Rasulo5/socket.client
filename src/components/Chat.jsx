@@ -8,7 +8,9 @@ import icon from '../images/emoji.svg';
 import styles from "../styles/Chat.module.css";
 import Messages from './Messages';
 
-const socket = io.connect("https://online-chat-7l13.onrender.com");
+const socket = io.connect("https://online-chat-7l13.onrender.com", {
+    withCredentials: true, // Разрешить передачу кук
+  });
 
 const Chat = () => {
     const { search } = useLocation();
