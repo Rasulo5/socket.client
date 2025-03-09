@@ -87,7 +87,6 @@ const Chat = () => {
                 </div>
 
                 <div className={styles.emoji}>
-
                     <img src={icon} alt='' onClick={() => setOpen(!isOpen)}/>
 
                     {isOpen && (
@@ -95,7 +94,6 @@ const Chat = () => {
                             <EmojiPicker onEmojiClick={onEmojiClick}/>
                         </div>
                     )}
-
                 </div>
 
                 <div className={styles.button}>

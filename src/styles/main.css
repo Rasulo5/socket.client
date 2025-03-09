@@ -1,26 +1,24 @@
-
 body {
     background: rgb(99, 37, 169);
     font-size: 16px;
-    font-family: Rubik, Roboto, sans-serif;
+    font-family: 'Rubik', 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
     color: rgb(48, 43, 43);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
 
 p {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
 }
 
 * {
@@ -32,14 +30,13 @@ img {
     height: auto;
 }
 
-input,
-button {
+input, button {
     border: none;
     background: none;
     outline: none;
     color: rgb(48, 43, 43);
     font-size: 16px;
-    font-family: Rubik, Roboto, sans-serif;
+    font-family: 'Rubik', 'Roboto', sans-serif;
 }
 
 a {
@@ -47,15 +44,15 @@ a {
     text-decoration: none;
 }
 
-ul,
-li {
+ul, li {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
 .container {
-    width: 1240px;
+    max-width: 1200px;  /* Уменьшил для адаптивности */
     margin: 0 auto;
+    padding: 20px; /* Добавил отступы по бокам */
     min-height: 100vh;
 }

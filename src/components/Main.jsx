@@ -27,6 +27,7 @@ const Main = () => {
             <h1 className={styles.heading}>Join</h1>
 
             <form className={styles.form}>
+
                 <div className={styles.group}>
                     <input 
                         type='text' 
@@ -39,6 +40,7 @@ const Main = () => {
                         required
                  />
                 </div>
+
                 <div className={styles.group}>
                     <input 
                         type='text' 
@@ -55,11 +57,13 @@ const Main = () => {
                 <Link 
                     className={styles.group} 
                     onClick={handleClick}
-                    to={`/chat?name=${values[NAME]}&room=${values[ROOM]}`}>
+                    to={`/chat?name=${values[NAME]}&room=${values[ROOM]}`}
+                >
                     <button type='submit' className={styles.button}>
                         Sign in
                     </button>
                 </Link>
+
             </form>
         </div>
     </div>
